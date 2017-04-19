@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+body{ padding:0; margin:0;background-color:#fff;font-size:14px;font-family:微软雅黑}
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p { padding:0; margin:0;color:#333333}
+ul{list-style:none;}
+img{border:0px;}
+a{ text-decoration:none;color:#333333}
+.clearfloat{clear:both; }
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+/*header*/
+.header{
+   width:100%;
+   height:118px;
+   background-color:#f6f0e7
+}
+.title{
+   width:1200px;
+   height:118px;
+   margin:0 auto
+}
+.logo1{
+   width:98px;
+   height:97px;
+   float:left;
+   margin-top:10px
+}
+.title ul{
+   width:1102px;
+   height:97px;
+   float:left
+}
+.title ul li{
+   width:92px;
+	 height:35px;
+   float:left;
+   margin:59px 0 0 90px;
+	 text-align:center;
+	 line-height:33px	
+}
+.title ul li a.first{
+	color:#fff;
+	background:url(../images/title_bg.gif) no-repeat
+}
+.title ul li a{
+	display:block;
+	width:92px;
+	height:35px
+}
+.title ul li a:hover{
+	color:#fff;
+	background:url(../images/title_bg.gif) no-repeat
+}
+.banner{
+   width:100%
+}
+/*middle开始*/
+.middle{
+   width:100%;
+   height:724px
+}
+.tab{
+   width:1200px;
+   height:83px;
+   margin:0 auto
+}
+.logo2{
+   width:79px;
+   height:83px;
+   float:left
+}
+.tab h1{
+	 font-size:12px;
+	 font-weight:normal;
+	 float:left;
+	 width:56px;
+   height:14px;
+   padding:55px 0 14px 38px
+}
+.tab span.last{
+   float:right;
+   width:190px;
+   height:14px;
+	 margin:54px 20px 11px 0
+}
+.border{
+	 width:100%;
+   height:3px;
+	 border-top:1px #3c0001 solid;
+   border-bottom:1px #3c0001 solid;
+	 float:left
+}
+.middle_content{
+	 width:1200px;
+	 height:600px;
+	 margin:0 auto ;
+	 display:none
+}
+.content_first{ 
+   display:block
+}
+.mid_con_lr{
+	 width:1200px;
+	 height:442px;
+	 margin-bottom:28px
+}
+.mid_con_l{
+	 width:624px;
+	 height:384px;
+	 float:left;
+	 margin-top:58px 
+}
+.mid_con_l p{
+	 font-size:16px
+}
+.form{
+	 width:425px;
+	 height:331px;
+	 margin:35px 0 0 50px
+}
+.form input{
+	 width:141px;
+	 height:25px;
+	 line-height:25px;
+	 margin-right:60px;
+	 padding-left:5px;
+	 color:#999;
+	 border:1px #3c0001 solid
+}
+.form textarea{
+	 resize:none;
+	 width:423px;
+	 height:131px;
+	 padding:5px 0 0 5px;
+	 font-size:14px;
+	 color:#999;
+	 border:1px #3c0001 solid
+}
+.form img{
+	 float:left
+}
+.form input.number{
+	 width:126px;
+	 height:16px;
+	 line-height:16px;
+	 margin-left:4px;
+	 float:left
+}
+.form p{
+	 float:right;
+	 border:1px #3c0001 solid;
+	 margin-left:24px
+}
+.form input.submit{
+	 width:46px;
+	 height:19px;
+	 border:1px #fff solid;
+	 background-color:#3c0001;
+	 color:#fff;
+	 line-height:17px;
+	 margin:0;
+	 cursor:pointer
+}
+.form input.reset{
+	 width:46px;
+	 height:19px;
+	 border:1px #fff solid;
+	 background-color:#3c0001;
+	 color:#fff;
+	 line-height:17px;
+	 margin:0;
+	 cursor:pointer
+}
+.mid_con_r{
+	 width:574px;
+	 height:396px;	 
+   float:left;
+	 border:1px #3c0001 solid;
+	 margin-top:44px
+}
+.mid_con_r iframe{
+	 width:574px;
+	 height:396px
+}
+.mid_con_b{
+	 width:549px;
+	 height:118px;
+	 margin:0 auto	 
+}
+.mid_con_b span{
+	 color:#333333;
+	 font-size:16px
+}
+.mid_con_b span.sp1{
+	 margin-right:20px
+}
+.mid_con_b span.sp2{
+	 margin-right:30px
+}
+/*footer开始*/
+.footer{
+	 width:100%;
+	 height:215px;
+	 background-color:#626262
+}
+.footer_con{
+	 width:1200px;
+	 height:175px;
+	 margin:0 auto;
+	
+}
+.f_con_l{
+	 width:852px;
+	 height:175px;
+	 float:left	 
+}
+.f_con_l ul{
+	 float:left;
+	 margin:33px 42px 0 42px;
+	 
+}
+.f_con_l ul li{
+	 color:#fff;
+	 text-align:center;
+	 line-height:23px
+	 
+}
+.f_con_l ul li.top{
+	 font-size:18px;
+	 padding-bottom:10px
+}
+.f_con_l ul li a{
+	 text-decoration:underline;
+	 color:#fff
+}
+.border4{
+	 width:0px;
+	 height:114px;
+	 margin-top:32px;
+	 float:left;
+	 border:1px #fff solid
+}
+.f_con_r{
+	 width:346px;
+	 height:175px;
+	 float:left	 
+}
+.f_con_r ul{
+	 margin:33px 0 0 71px	 
+}
+.f_con_r ul li{
+	 color:#fff;
+	 font-size:18px;
+	 line-height:38px
+}
+.f_con_r ul li.phone{
+	 font-size:22px
+}
+.copyright{
+	 color:#fff;
+	 text-align:center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
