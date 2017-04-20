@@ -1,0 +1,364 @@
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;color:#4c4c4c}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+
+
+
+/*content*/
+.content{
+	width: 1200px;
+	margin:0 auto;
+}
+.pro_select{
+	float: left;
+}
+.pro_select ul li{
+	float: left;
+	width: 116px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 23px
+}
+.pro_select ul li:first-child{
+	margin-left: 0
+}
+.pro_select ul li a{
+	display: block;
+	float: left;
+	width: 116px;
+	height: 50px;
+	font-size: 16px;
+	color: #000000
+}
+.pro_select ul li a span{
+	padding-left: 5px;
+	color: #ff4466
+}
+.pro_select ul li a:hover{
+	color: #ff4466;
+	border-bottom: 2px solid #ff4466
+}
+.pro_select ul li.current a{
+	color: #ff4466;
+	border-bottom: 2px solid #ff4466
+} 
+.pay_top{
+	float: right;
+	padding-top: 18px
+}
+.pay_top p{
+	float: left;
+	color: #000000
+}
+.pay_top p span{
+	color: #ff4466;
+	font-weight: bold;
+}
+.pay_top p.pay_btn_top{
+	margin-left: 63px;
+	width: 81px;
+	height: 27px;
+	background-color: #ff4466;
+	border-radius: 5px
+}
+.pay_top p.pay_btn_top a{
+	display: block;
+	float: left;
+	width: 81px;
+	height: 27px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 27px	
+}
+/*购物车头部标题*/
+.order_head{
+	width: 1200px;
+	height: 54px;
+	line-height: 54px;
+	clear: both;
+	margin-bottom: 12px
+}
+.order_head li{
+	float: left;
+	font-size: 16px;
+}
+.order_head li:first-child{
+	width: 138px;
+	padding-left: 30px;
+}
+.order_head li:first-child input{
+	display: none;
+}
+.order_head li:nth-child(2){
+	width: 383px;
+	padding-left: 50px;
+}
+.order_head li:nth-child(3){
+	width: 130px;
+	text-align: center;
+}
+.order_head li:nth-child(4){
+	width: 224px;
+	text-align: center;
+}
+.order_head li:nth-child(5){
+	width: 124px;
+	text-align: center;
+}
+.order_head li:last-child{
+	float: right;
+	margin-right: 31px
+}
+/*商品目录*/
+.order_list_detail{
+	display: none;
+}
+.order_head+ul{
+	display: block;
+}
+.order_list_detail li{
+	width: 1198px;
+	height: 100px;
+	border:1px solid #b2b2b2;
+	padding: 25px 0 42px 0;
+	margin-bottom: 45px
+}
+.order_list_detail li > div{
+	float: left;
+}
+/*图片*/
+.order_pic{
+	width: 168px
+}
+.order_pic input{
+	display: none;
+}
+.order_pic img.check_btn{
+	margin:0 16px;
+	float: left;
+}
+.order_pic a{
+	display: block;
+	float: left;
+}
+/*商品信息*/
+.order_attr{
+	width: 414px;
+	padding-left: 19px
+}
+.order_attr p{
+	float: left;
+}
+.order_attr p.name{
+	margin-top: 14px
+}
+.order_attr p.color_size{
+	float:left;
+	margin-left: 18px;
+	margin-top: 14px;
+	width: 115px;
+	height: 54px;
+	color: #b2b2b2
+}
+.order_attr p.service{
+	width: 293px;
+	height: 16px;
+	float:left;
+	margin-top: 14px
+}
+/*单价*/
+.order_unitPrice{
+	width: 130px
+}
+.order_unitPrice p{
+	margin-bottom: 5px
+}
+.order_unitPrice p:first-child{
+	margin-top: 14px;
+	color: #b2b2b2;
+	text-align: center;
+	text-decoration: line-through;
+}
+.order_unitPrice p:nth-child(2){
+	color: #000000;
+	text-align: center;
+}
+.order_unitPrice p:last-child{
+	width: 90px;
+	height: 20px;
+	color: #ff4466;
+	padding-left: 10px;
+	background: url(../images/shop_cart_07.jpg) no-repeat 74px 7px #fdf0e3;
+	line-height: 20px;
+	margin:0 auto;
+	cursor: pointer;
+}
+/*数量*/
+.order_amount{
+	width: 224px;
+}
+.order_amount button{
+	float: left;
+	width: 28px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	margin-top: 14px;
+	border:1px solid #b2b2b2;
+	background-color: #d0d0d0;
+	cursor: pointer;
+}
+.order_amount input{
+	float: left;
+	width: 26px;
+	height: 18px;
+	text-align: center;
+	margin-top: 14px;
+	border:1px solid #969696;
+}
+.reduce{
+	margin-right: -1px;
+	margin-left: 68px
+}
+.add{
+	margin-left: -1px;
+}
+/*金额*/
+.order_totalPrice{
+	width: 124px
+}
+.order_totalPrice p{
+	margin-top: 14px;
+	color: #ff4466;
+	text-align: center;
+}
+/*操作*/
+.order_operate{
+	padding-left: 45px
+}
+.order_operate p:first-child{
+	margin-top: 14px
+}
+/*结算*/
+.pay_bottom{
+	width: 1200px;
+	height: 100px	
+}
+.pay_bottom ul{
+	float: left;
+	width: 1005px;
+	height: 100px;
+	background-color: #c8c7c7
+}
+.pay_bottom ul li{
+	float: left;;
+	line-height: 100px
+}
+.pay_bottom input{
+	display: none;
+}
+.pay_bottom ul li:first-child{
+	padding-left: 13px;
+	color: #000000
+}
+.order_delete{
+	padding-left: 33px
+}
+.order_clean{
+	padding-left: 48px
+}
+.order_move{
+	padding-left: 27px
+}
+.order_share{
+	padding-left: 54px
+}
+.order_choosed{
+	padding-left: 178px;
+}
+.order_choosed em{
+	font-style: normal;
+	color: #ff4466
+}
+.order_choosed img{
+	padding-left: 6px;
+	cursor: pointer;
+}
+.order_total{
+	padding-left: 45px
+}
+.order_total em{
+	color: #ff4466;
+	font-style: normal;
+}
+.pay_btn_bottom{
+	float: right;
+	width:195px;
+	height: 100px;
+	background-color: #ff4466;
+	text-align: center;
+	line-height: 100px
+}
+.pay_btn_bottom a{
+	display: block;
+	width: 195px;
+	height: 100px;
+	color: #ffffff;
+	font-size: 30px;
+	letter-spacing: 5px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

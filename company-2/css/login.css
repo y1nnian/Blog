@@ -1,0 +1,200 @@
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+/*header*/
+.header{
+	width:1200px;
+	height:184px;
+	line-height:184px;
+	margin:0 auto
+}
+.header a img{
+	margin-top:51px;
+	float:left
+}
+.header p{
+	float:left;
+	font-size:30px;
+	color:#ff4466;
+	margin-left:54px;
+}
+.content{
+	width:100%;
+	height:500px;
+	background:url(../images/login_02.jpg) no-repeat
+}
+.main{
+	width:1200px;
+	margin:0 auto
+}
+/*登录界面*/
+.login{
+	width:290px;
+	height:360px;
+	background-color:#fff;
+	float:right;
+	margin:50px 30px 0 0;
+	padding:20px 30px
+}
+.login a{
+	font-size:18px
+}
+#account_login{
+	float:right;
+	color:#ff4466
+}
+.login p{
+	width:240px;
+	height:22px;
+	line-height:22px;
+	padding-left:46px;
+	margin:19px 0 15px 0;
+	border:1px solid #aaa59f;
+	color:#4c4c4c;
+	font-size:12px;
+	font-family:宋体;
+	background:url(../images/login_05.jpg) no-repeat 11px 3px #fdfde8;
+}
+.login label{
+	display:block;
+	float:left;
+	width:40px;
+	height:40px;
+	border:1px solid #d2d2d2;
+	margin-right:-1px
+}
+.login input{
+	width:244px;
+	height:38px;
+	font-size:12px;
+	text-align:center;
+	margin-bottom:20px;
+	line-height: 38px;
+	color: #999999;
+	border:1px solid #d2d2d2
+}
+.login label.username{
+	background:url(../images/login_06.jpg) no-repeat 11px 11px
+}
+.login label.password{
+	background:url(../images/login_09.jpg) no-repeat 11px 10px
+}
+.login label.captcha{
+	width:60px;
+	text-align:center;
+	line-height:40px;
+	font-family:宋体
+}
+.login input.captcha{
+	width:84px
+}
+.login label.captcha_pic{
+	width:123px;
+	height:40px;
+	border:none;
+	float:right;
+	margin:0 0 0 15px;
+	cursor:pointer
+}
+.login input.remember{
+	width:15px;
+	height:15px;
+	display:none
+}
+.remember_button{
+	margin-right:3px;
+	cursor:pointer;
+	float:left
+}
+.remember_button + span{
+	display:block;
+	width:50px;
+	height:15px;
+	float:left;
+	font-size:12px;
+	font-family:宋体
+}
+.forget{
+	float:right
+}
+.forget a{
+	color:#000;
+	font-size:12px;
+	font-family:宋体;
+	text-decoration:underline
+}
+.login input.login_btn{
+	width:290px;
+	height:35px;
+	background-color:#ff4466;
+	color:#fff;
+	font-size:18px;
+	letter-spacing:15px;
+	border:none;
+	margin-top:14px;
+	cursor:pointer
+}
+.login > span{
+	display:block;
+	float:left;
+	width:52px;
+	height:17px;
+	padding-left:26px
+}
+.login > span a{
+	font-size:12px;
+}
+.login > span.qq{
+	background:url(../images/login_19.jpg) no-repeat
+}
+.login > span.wechat{
+	background:url(../images/login_22.jpg) no-repeat
+}
+.login > span.register{
+	background:url(../images/login_24.jpg) no-repeat;
+	float:right
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

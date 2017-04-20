@@ -1,0 +1,293 @@
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+
+/*middle开始*/
+.content{
+	width:1200px;
+	margin:0 auto
+}
+.status_bar{
+	width:1200px;
+	height:121px
+}
+/*.status_bar_flow{
+	width:690px;
+	height:18px;
+	margin:0 auto;
+	padding-top:22px
+}
+.status_bar_flow li{
+	float:left;
+	width:136px;
+	height:18px;
+	text-align:center
+}
+.status_bar_ico{
+	width:680px;
+	height:40px;
+	margin:16px auto 0 auto;
+	padding-left:100px
+}
+.status_bar_ico li{
+	float:left;
+	width:27px;
+	height:40px;
+	line-height:40px;
+	font-size:24px;
+	color:#fff;
+	margin-left:-1px;
+	padding-left:108px;
+	background:url(../images/order_details_033.jpg) no-repeat 0px 0px
+}
+.status_bar_ico li:first-child{
+	background:url(../images/order_details_05.jpg) no-repeat 0px 0px;
+	width:26px;
+	padding-left:14px
+}*/
+.step_bar_flow{
+	width:620px;
+	height:55px;
+	margin:0 auto
+}
+.step_bar_flow li{
+	float:left;
+	width:90px;
+	height:55px;
+	text-align:center;
+	line-height:55px;
+	margin-left:35px
+}
+.step_bar_flow li:first-child{
+	margin-left:15px
+}
+.step_bar_ico{
+	width:533px;
+	height:40px;
+	background:url(../images/order_details_12.jpg) no-repeat;
+	margin:0 auto
+}
+.step_bar_ico li{
+	float:left;
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	font-size:24px;
+	color:#fff;
+	margin-left:83px
+}
+.step_bar_ico li:first-child{
+	margin-left:0
+}
+.detail_box1{
+	width:1198px;
+	height:459px;
+	border:1px solid #ff4466;
+	margin:26px 0 31px 0
+}
+.detail_box1 h1{
+	font-size:18px;
+	font-weight:normal
+}
+.trade_detail{
+	width:1194px;
+	height:101px;
+	padding:20px 0 0 4px;
+	border-bottom:1px solid #b2b2b2
+}
+.trade_detail h1 span{
+	color:#ff4466
+}
+.trade_detail p{
+  margin-left:16px;
+	font-size:12px;
+	line-height:24px	
+}
+/*物流信息*/
+.package_imfor{
+	width:1194px;
+  padding-left:4px;
+	font-size:12px
+}
+.package_imfor h1{
+	margin-bottom:30px
+}
+.package_imfor p{
+	line-height:20px
+}
+.package_address_detail{
+	float:left
+}
+.package_imfor ul{
+	margin-left:60px
+}
+.package_imfor ul li{
+	line-height:20px
+}
+.status_current{
+	color:#ff4466
+}
+/*订单信息*/
+.detail_box2{
+	width:1200px;
+	height:607px
+}
+.detail_box2_title{
+	width:1184px;
+	height:48px;
+	background-color:#ff4466;
+	font-size:18px;
+	color:#fff;
+	line-height:48px;
+	padding-left:16px
+}
+.buyer_address{/*买家地址*/
+	width:1200px;
+	height:180px
+}
+.buyer_address dl{
+	width:1200px;
+	height:54px;
+	line-height:54px
+}
+.buyer_address dl dt{
+	width:130px;
+	height:54px;
+	float:left
+}
+.detail_box2 hr{
+	border:none;
+	border-top:1px solid #aeaeae
+}
+.seller_imfor{/*卖家信息*/
+	width:1200px;
+	height:150px
+}
+.seller_imfor table{
+	width:720px;
+	margin-left:130px
+}
+.seller_imfor table tr td{
+	height:40px
+}
+.seller_imfor table tr td span a{
+	color:#ff4466
+}
+.order_imfor{/*订单信息*/
+	width:1200px;
+	height:150px
+}
+.order_imfor table{
+	width:750px;
+	margin-left:130px
+}
+.order_imfor table tr td{
+	height:40px
+}
+/*商品信息*/
+.detail_box3{
+	width:1200px;
+	height:170px
+}
+.detail_box3 table{
+	border-collapse:collapse
+}
+.order_imfor_menu{
+	width:1200px;
+	height:48px;
+	color:#fff;
+	background-color:#ff4466
+}
+.order_imfor_detail{
+	width:1198px;
+	height:120px;
+	text-align:center;
+	line-height:120px;
+	border:1px solid #aeaeae
+}
+.order_name{
+	width:260px;
+	text-align:left;
+	line-height:normal
+}
+.order_name > a{
+	float:left;
+	margin:0 5px
+}
+.order_name p.name{
+	margin:20px 0 12px 0
+}
+.order_name span{
+	font-size:12px;
+	color:#bdbdbd	
+}
+.order_status{
+	width:96px
+}
+.order_service{
+	width:210px
+}
+.order_service a{
+	color:#ff4466
+}
+.order_unitPrice{
+	width:130px
+}
+.order_amount{
+	width:148px
+}
+.order_sale{
+	width:160px
+}
+.order_totalPrice{
+	width:196px;
+	line-height:normal
+}
+.order_totalPrice p{
+	color:#ff4466
+}
+#totalPrice{
+	float:right;
+	color:#ff4466;
+	margin:16px 0 30px 0
+}
+#totalPrice span:first-child{
+	color:#000
+}
+
+
+
+
+

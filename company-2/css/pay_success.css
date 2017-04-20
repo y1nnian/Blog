@@ -1,0 +1,108 @@
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+
+/*middle开始*/
+.content{
+	width:1200px;
+	margin:0 auto
+}
+.pay_success{
+	width:449px;
+	height:152px;
+	margin:147px auto 0 auto
+}
+.pay_success img{
+	float:left;
+	margin:0 75px 0 17px
+}
+.pay_success p{
+	font-size:36px;
+	letter-spacing:8px
+}
+.pay_success span{
+	font-size:18px
+}
+.pay_success em{
+	font-size:18px;
+	font-style:normal;
+	color:#ff4466
+}
+.pay_address{
+	width:416px;
+	height:137px;
+	font-size:16px;
+	margin:0 auto;
+	padding:35px 0 0 14px;
+	border:1px solid #cecece
+}
+.pay_address p{
+	margin-bottom:18px
+}
+.pay_address p em{
+	font-style:normal;
+	margin-left:30px;
+	color:#4c4c4c
+}
+.pay_address p:nth-child(2){
+	color:#4c4c4c
+}
+.pay_address p:nth-child(2) a{
+	color:#ff4466;
+	text-decoration:underline
+}
+.pay_address p:nth-child(3) a{
+	color:#000;
+	text-decoration:underline
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

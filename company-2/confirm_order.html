@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+<link href="css/confirm_order.css" type="text/css" rel="stylesheet"/>
+<link href="css/public_head.css" type="text/css" rel="stylesheet"/>
+<link href="css/public_foot.css" type="text/css" rel="stylesheet"/>
+<!-- 兼容ie6-8 -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script> 
+<![endif]-->
+
+</head>
+
+<body>
+<!--头部-->
+  <div class="header">
+    <p>送至：北京 
+      <a href="javascript:;"><img src="images/index_666.jpg" /></a>
+    </p>
+    <ul class="topnav">
+      <li><a href="login.html">您好，请登录</a> <span><a href="register.html">免费注册</a></span><em>|</em></li>
+      <li><a href="order.html">我的订单</a><em>|</em></li>
+      <li class="top_nav">
+        <a href="javascript:;">我的欧蒂芙
+          <img src="images/index_666.jpg" />
+        </a>
+        <ul>
+          <li><a href="javascript:;">子菜单</a></li>
+          <li><a href="javascript:;">子菜单</a></li>
+        </ul>
+        <em>|</em>
+      </li>
+      <li><a href="user.html">欧蒂芙会员</a><em>|</em></li>
+      <li><a href="javascript:;">企业采购</a><em>|</em></li>
+      <li class="top_nav">
+        <a href="javascript:;">关注欧蒂芙
+          <img src="images/index_666.jpg" />
+        </a>
+        <ul>
+          <li><a href="javascript:;">子菜单</a></li>
+          <li><a href="javascript:;">子菜单</a></li>
+        </ul>
+        <em>|</em>
+      </li>
+      <li class="top_nav">
+        <a href="javascript:;">客户服务
+          <img src="images/index_666.jpg" />
+        </a>
+        <ul>
+          <li><a href="javascript:;">子菜单</a></li>
+          <li><a href="javascript:;">子菜单</a></li>
+        </ul>
+        <em>|</em>
+      </li>
+      <li class="top_nav">
+        <a href="javascript:;">网站导航
+          <img src="images/index_666.jpg" />
+        </a>
+        <ul>
+          <li><a href="javascript:;">子菜单</a></li>
+          <li><a href="javascript:;">子菜单</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!--logo-->
+    <a href="index.html" class="logo"><img src="images/index_03.jpg" /></a>
+    <!--搜索框-->       
+    <form>
+      <input type="text" placeholder="羽绒服" class="search"/>
+      <button type="button"  value=""/>搜索</button>
+    </form>
+    <div class="shopping">
+      <a href="shop_cart.html">
+        <img src="images/index_06.jpg" class="shop_icon1"/>
+        <span>购物车</span>
+        <img src="images/index_777.jpg" class="shop_icon2"/>
+      </a>
+    </div>
+    <ul class="hot">
+      <li class="hot_search">热门搜索 :</li>
+      <li class="current"><a href="javascript:;">教你搭配</a></li>
+      <li><a href="javascript:;">羽绒99元</a></li>
+      <li><a href="javascript:;">长款羽绒</a></li>
+      <li><a href="javascript:;">保暖内衣</a></li>
+      <li><a href="javascript:;">Chic穿搭</a></li>
+      <li class="current"><a href="javascript:;">特卖街</a></li>
+    </ul>   
+    <!--主菜单-->
+    <ul class="main_nav">
+      <!--主菜单-->
+      <li class="current"><a href="index.html">商城首页</a></li>
+      <li><a href="shop_list.html">所有商品</a></li>
+      <li><a href="javascript:;">精品推荐</a></li>
+      <li><a href="javascript:;">热销产品</a></li>
+      <li><a href="javascript:;">女装新品</a></li>
+      <li><a href="javascript:;">疯狂抢购</a></li>
+    </ul> 
+  </div>
+  <hr / class="line">
+<!--头部结束-->
+  <div class="content">
+    <div class="step_bar">
+      <ul class="step_bar_flow">
+        <li>查看购物车</li>
+        <li>拍下商品</li>
+        <li>付款到支付宝</li>
+        <li>确认收货</li>
+        <li>评价</li>
+      </ul>
+      <ul class="step_bar_ico">
+        <li>✔</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="address_select">
+      <h4>选择收货地址</h4>
+      <div class="address_list">
+        <div class="current_address">
+          <p class="address_top">
+            <span>陕西西安</span>
+            <span>孙晓美（收）</span>
+          </p>
+          <p class="address_mid">陕西省西安市碑林区友谊路开元名都</p>
+          <p class="phone_numb">13072714456</p>
+          <p class="address_botm">
+            <a href="javascript:;">修改</a>
+            <span>默认地址</span>
+          </p>
+        </div>
+        <div>
+          <p class="address_top">
+            <span>陕西西安</span>
+            <span>孙晓美（收）</span>
+          </p>
+          <p class="address_mid">陕西省西安市碑林区友谊路开元名都</p>
+          <p class="phone_numb">13072714456</p>
+          <p class="address_botm">
+            <a href="javascript:;">修改</a>
+            <span></span>
+          </p>
+        </div>
+        <div>
+          <p class="address_top">
+            <span>陕西西安</span>
+            <span>孙晓美（收）</span>
+          </p>
+          <p class="address_mid">陕西省西安市碑林区友谊路开元名都</p>
+          <p class="phone_numb">13072714456</p>
+          <p class="address_botm">
+            <a href="javascript:;">修改</a>
+            <span></span>
+          </p>
+        </div>
+        <div>
+          <p class="address_top">
+            <span>陕西西安</span>
+            <span>孙晓美（收）</span>
+          </p>
+          <p class="address_mid">陕西省西安市碑林区友谊路开元名都</p>
+          <p class="phone_numb">13072714456</p>
+          <p class="address_botm">
+            <a href="javascript:;">修改</a>
+            <span></span>
+          </p>
+        </div>
+      </div>
+      <a href="javascript:;" class="address_btn">确认收货地址</a>
+      <a href="javascript:;" class="address_manage">管理收货地址</a>
+    </div>
+    <div class="confirm_cart">
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <th>店铺宝贝</th>
+          <th>商品属性</th>
+          <th>单价</th>
+          <th>数量</th>
+          <th>优惠方式</th>
+          <th>小计</th>
+        </tr>
+        <tr class="confirm_order_list">
+          <td class="order_name">
+            <a href="javascript:;">
+              <img src="images/confirm_order_14.jpg" />
+              <p>给卖家留言:</p>
+            </a>
+          </td>
+          <td class="order_attr">
+            <div>
+              <p class="name">
+                <a href="javascript:;">2017秋冬欧蒂芙新款上衣</a>
+              </p>
+              <p class="color_size">
+                <span>颜色分类：</span>
+                <span>咖啡色</span>
+                <span>尺码：</span>
+                <span>S</span>
+              </p>
+              <p class="service">
+                <a href="javascript:;"><img src="images/confirm_order_22.jpg" /></a>
+                <a href="javascript:;"><img src="images/confirm_order_17.jpg" /></a>
+                <a href="javascript:;"><img src="images/confirm_order_19.jpg" /></a>
+              </p>
+              <input type="text" placeholder="选填对本次交易的说明（注意：要跟商家协商的一致）">
+            </div>
+          </td>
+          <td class="order_unitPrice">
+            <p>
+              <span>￥</span>
+              <span>1989.00</span>
+            </p>
+            <p>
+              <span>运送方式：<em>普通配送</em></span>
+              <span class="express">快递</span>
+              <span>免邮</span>
+            </p>
+            <p>
+              <span>运费险：</span>
+              <a href="javascript:;">运费险</a>
+              <span>￥6.00购买</span>
+            </p>
+          </td>
+          <td class="order_amount">
+            <p>1</p>
+          </td>
+          <td class="order_sale">
+            <p>
+              <span>省666：</span>
+              <em>年终大促销</em>
+            </p>
+          </td>
+          <td class="order_totalPrice">
+            <p>
+              <span>￥</span>
+              <span>1989.00</span>
+            </p>
+            <p>0.00</p>
+            <p>6.00</p>
+          </td>
+        </tr>
+        <tr class="confirm_order_list">
+          <td class="order_name">
+            <a href="javascript:;">
+              <img src="images/confirm_order_14.jpg" />
+              <p>给卖家留言:</p>
+            </a>
+          </td>
+          <td class="order_attr">
+            <div>
+              <p class="name">
+                <a href="javascript:;">2017秋冬欧蒂芙新款上衣</a>
+              </p>
+              <p class="color_size">
+                <span>颜色分类：</span>
+                <span>咖啡色</span>
+                <span>尺码：</span>
+                <span>S</span>
+              </p>
+              <p class="service">
+                <a href="javascript:;"><img src="images/confirm_order_22.jpg" /></a>
+                <a href="javascript:;"><img src="images/confirm_order_17.jpg" /></a>
+                <a href="javascript:;"><img src="images/confirm_order_19.jpg" /></a>
+              </p>
+              <input type="text" placeholder="选填对本次交易的说明（注意：要跟商家协商的一致）">
+            </div>
+          </td>
+          <td class="order_unitPrice">
+            <p>
+              <span>￥</span>
+              <span>1989.00</span>
+            </p>
+            <p>
+              <span>运送方式：<em>普通配送</em></span>
+              <span class="express">快递</span>
+              <span>免邮</span>
+            </p>
+            <p>
+              <span>运费险：</span>
+              <a href="javascript:;">运费险</a>
+              <span>￥6.00购买</span>
+            </p>
+          </td>
+          <td class="order_amount">
+            <p>1</p>
+          </td>
+          <td class="order_sale">
+            <p>
+              <span>省666：</span>
+              <em>年终大促销</em>
+            </p>
+          </td>
+          <td class="order_totalPrice">
+            <p>
+              <span>￥</span>
+              <span>1989.00</span>
+            </p>
+            <p>0.00</p>
+            <p>6.00</p>
+          </td>
+        </tr>
+        <tr class="confirm_order_list">
+          <td class="order_name">
+            <a href="javascript:;">
+              <img src="images/confirm_order_14.jpg" />
+              <p>给卖家留言:</p>
+            </a>
+          </td>
+          <td class="order_attr">
+            <div>
+              <p class="name">
+                <a href="javascript:;">2017秋冬欧蒂芙新款上衣</a>
+              </p>
+              <p class="color_size">
+                <span>颜色分类：</span>
+                <span>咖啡色</span>
+                <span>尺码：</span>
+                <span>S</span>
+              </p>
+              <p class="service">
+                <a href="javascript:;"><img src="images/confirm_order_22.jpg" /></a>
+                <a href="javascript:;"><img src="images/confirm_order_17.jpg" /></a>
+                <a href="javascript:;"><img src="images/confirm_order_19.jpg" /></a>
+              </p>
+              <input type="text" placeholder="选填对本次交易的说明（注意：要跟商家协商的一致）">
+            </div>
+          </td>
+          <td class="order_unitPrice">
+            <p>
+              <span>￥</span>
+              <span>1989.00</span>
+            </p>
+            <p>
+              <span>运送方式：<em>普通配送</em></span>
+              <span class="express">快递</span>
+              <span>免邮</span>
+            </p>
+            <p>
+              <span>运费险：</span>
+              <a href="javascript:;">运费险</a>
+              <span>￥6.00购买</span>
+            </p>
+          </td>
+          <td class="order_amount">
+            <p>1</p>
+          </td>
+          <td class="order_sale">
+            <p>
+              <span>省666：</span>
+              <em>年终大促销</em>
+            </p>
+          </td>
+          <td class="order_totalPrice">
+            <p>
+              <span>￥</span>
+              <span>1989.00</span>
+            </p>
+            <p>0.00</p>
+            <p>6.00</p>
+          </td>
+        </tr>
+      </table>
+      <div class="refer_order">
+        <div class="pay_choose">
+          <p>
+            <input type="checkbox" class="choose_btn" checked="checked">
+            <img src="images/confirm_order_34.jpg" class="btn_ico">
+            <span>匿名购买</span>
+          </p>
+          <p>
+            <input type="checkbox" class="choose_btn">
+            <img src="images/confirm_order_33.jpg" class="btn_ico">
+            <span>找人代付</span>
+          </p>
+          <p>结算时扣除</p>
+          <p>
+            <input type="checkbox" class="choose_btn">
+            <img src="images/confirm_order_33.jpg" class="btn_ico">
+            <span>使用欧蒂芙点券</span>
+          </p>
+        </div>
+        <div class="address_choose">
+          <p>
+            <strong>实付款：</strong>
+            <span>￥5967.00</span>
+          </p>
+          <p>
+            <strong>寄送至：</strong>
+            <span>陕西省西安市碑林区友谊路开元名都大酒店</span>
+          </p>
+          <p>
+            <strong>收货人</strong>
+            <span>孙小美</span>
+            <span>13072714456</span>
+          </p>
+        </div>
+        <div class="refer_button">
+          <a class="left_btn" href="shop_cart.html">返回购物车</a>
+          <a class="right_btn" href="pay.html">提交订单</a>
+        </div> 
+      </div>
+    </div>
+  </div>
+<!--content结束-->
+<!--footer开始-->
+  <div class="footer_top">
+    <ul>
+      <li><img src="images/index_150.jpg" />品类齐全 轻松购物</li>
+      <li><img src="images/index_153.jpg" />多仓直发 急速配送</li>
+      <li><img src="images/index_156.jpg" />正品行货 精致服务</li>
+      <li><img src="images/index_159.jpg" />天天低价 畅选无忧</li>
+    </ul>      
+  </div>
+  <div class="footer_middle">
+    <div>
+      <dl>
+        <dt>购物指南</dt>
+        <dd><a href="javascript:;">购物流程</a></dd>
+        <dd><a href="javascript:;">会员介绍</a></dd>
+        <dd><a href="javascript:;">生活团购</a></dd>
+        <dd><a href="javascript:;">常见问题</a></dd>
+        <dd><a href="javascript:;">联系客服</a></dd>
+      </dl>
+      <dl>
+        <dt>配送方式</dt>
+        <dd><a href="javascript:;">上门自提</a></dd>
+        <dd><a href="javascript:;">211限时</a></dd>
+        <dd><a href="javascript:;">手机查询</a></dd>
+        <dd><a href="javascript:;">收费标准</a></dd>
+        <dd><a href="javascript:;">海外配送</a></dd>
+      </dl>
+      <dl>
+        <dt>支付方式</dt>
+        <dd><a href="javascript:;">货到付款</a></dd>
+        <dd><a href="javascript:;">在线支付</a></dd>
+        <dd><a href="javascript:;">分期付款</a></dd>
+        <dd><a href="javascript:;">邮局汇款</a></dd>
+        <dd><a href="javascript:;">公司转账</a></dd>
+      </dl>
+      <dl>
+        <dt>售后服务</dt>
+        <dd><a href="javascript:;">售后政策</a></dd>
+        <dd><a href="javascript:;">价格保护</a></dd>
+        <dd><a href="javascript:;">退款说明</a></dd>
+        <dd><a href="javascript:;">取消订单</a></dd>
+        <dd><a href="javascript:;">返修退换</a></dd>
+      </dl>
+      <dl>
+        <dt>特色服务</dt>
+        <dd><a href="javascript:;">夺宝岛</a></dd>
+        <dd><a href="javascript:;">DIY装机</a></dd>
+        <dd><a href="javascript:;">延保服务</a></dd>
+        <dd><a href="javascript:;">蒂芙E卡</a></dd>
+        <dd><a href="javascript:;">蒂芙通信</a></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div>
+      <div class="footer_tel">
+        <img src="images/index_171.jpg" />
+        <p>OUDIFU客服热线</p>
+        <p>400-821-2086</p>
+        <p>周一至周日：8：00——22：00</p>
+      </div>
+      <div class="footer_code">
+        <img src="images/index_166.jpg" />       
+        <img src="images/index_168.jpg" />
+        <span>公众号</span>
+        <span>扫码优惠</span>
+      </div>
+      <div class="footer_weibo">
+        <a href="javascript:;">
+          <span>新浪微博</span>
+          <img src="images/index_179.jpg" />
+        </a>
+        <a href="javascript:;">
+          <span>QQ空间</span>
+          <img src="images/index_174.jpg" />
+        </a>
+        <a href="javascript:;">
+          <span>腾讯微博</span>
+          <img src="images/index_176.jpg" />
+        </a>
+      </div>
+      <div class="copyright">
+        <span>Copyright©2014-oudifu.com</span>
+        <span>沪ICP备09052533号-1</span>
+        <span>客服邮箱：oudifu@oudifu.com</span>
+        <span>客服电话：400-821-2086</span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/ie-placeholder.js"></script>      
+  <script type="text/javascript" src="js/confirm_order.js"></script>  
+  <script type="text/javascript" src="js/public_head.js" ></script>  
+</body>
+</html>

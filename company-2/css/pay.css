@@ -1,0 +1,346 @@
+
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;color:#4c4c4c}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+
+
+
+/*content*/
+.content{
+	width: 1200px;
+	margin:0 auto;
+}
+/*订单*/
+.confirm_cart{
+	width: 1200px
+}
+.confirm_cart table{
+	width: 1200px;
+	table-layout: fixed
+}
+.confirm_cart table tr:first-child{
+	height: 53px;
+	font-size: 16px
+}
+.confirm_cart table tr:nth-child(2){
+	margin-top: 30px
+}
+.confirm_cart table tr:last-child{
+	margin-bottom: 0px
+}
+.confirm_cart table tr th{
+	border-bottom: 1px solid #ff4466;
+}
+.confirm_cart table tr th:first-child{
+	text-align: left;
+	padding-left: 31px
+}
+.confirm_cart table tr th:last-child{
+	text-align: right;
+	padding-right: 31px
+}
+.confirm_cart table tr th:nth-child(4){
+	padding-left: 40px
+}
+.confirm_cart table tr th:nth-child(5){
+	padding-left: 64px
+}
+.confirm_order_list{
+	float:left;
+	width:1170px;
+	height:212px;
+	margin-left:30px;
+	margin-bottom: 50px;
+	border-top:1px solid #cecece;
+	border-bottom: 1px solid #cecece
+}
+.confirm_order_list td{
+	vertical-align: top;
+	height: 169px;
+	padding-top: 43px
+}
+/*商品名称*/
+.confirm_order_list td.order_name{
+	width:100px;
+	height: 194px;
+	padding-top: 18px
+}
+.confirm_order_list td.order_name p{
+	margin-top: 20px;
+	text-align: center;
+}
+/*商品信息*/
+.order_attr{
+	width: 293px;
+	height: 169px;
+	padding: 43px 7px 0 16px
+}
+.order_attr p.name{
+	float:left
+}
+.order_attr input{
+	width: 295px;
+	height: 28px;
+	font-size: 12px;
+	padding-left: 6px;
+	margin-top: 13px;
+	line-height: 28px;
+	color: #999999;
+	border: 1px solid #b2b2b2
+}
+.order_attr p.color_size{
+	float:left;
+	margin-left: 18px;
+	width: 115px;
+	height: 54px;
+	color: #b2b2b2
+}
+.order_attr p.service{
+	width: 293px;
+	height: 16px;
+	float:left
+}
+.order_attr p.service img{
+	margin-right: 10px;
+}
+/*单价*/
+.order_unitPrice{
+	width: 213px;
+	padding-left: 17px
+}
+.order_unitPrice p{
+	font-size: 12px;
+}
+.order_unitPrice p:first-child{
+	margin-bottom: 59px
+}
+.order_unitPrice p:nth-child(2) span.express{
+	margin: 0 25px 0 18px
+}
+.order_unitPrice p:last-child{
+	margin-top: 10px
+}
+.order_unitPrice p:last-child span{
+	float:left
+}
+.order_unitPrice p em{
+	font-style: normal;
+}
+.order_unitPrice a{
+	display: block;
+	float:left;
+	width: 60px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	background-color: #ff4466;
+	margin: 0 29px 0 10px
+}
+/*数量*/
+.order_amount{
+	width: 155px;
+	padding-left: 35px;	
+}
+/*优惠*/
+.order_sale{
+	width: 139px;
+	text-align: center
+}
+.order_sale p em{
+	font-style: normal;
+	color: #ff4466
+}
+/*小计*/
+.order_totalPrice{
+	width: 80px;
+	padding-left: 116px;
+	text-align: center;
+}
+.order_totalPrice p:first-child{
+	color: #ff4466;
+	margin-bottom: 59px
+}
+.order_totalPrice p:nth-child(2){
+	color: #ff4466
+}
+/*应付金额*/
+.pay_total{
+	float:right;
+	margin-top: 21px
+}
+.pay_total em{
+	font-style: normal;
+	font-size: 24px;
+	color: #ff4466;
+	padding-left: 50px
+}
+hr{
+	float: right;
+	width: 1170px;
+	height: 1px;
+	border:none;
+	background-color: #cecece;
+	margin-top: 30px;
+}
+/*付款方式*/
+.pay_bank{
+	float: left;
+	width: 1198px;
+	height: 494px;
+	border:1px solid #b2b2b2;
+	margin-top: 30px
+}
+.pay_bank_head{
+	margin:10px 0 28px 15px;
+}
+.pay_bank_head span{
+	padding-right: 144px
+}
+.pay_bank_head span em{
+	font-style: normal;
+}
+.pay_bank_mid{
+	width: 1191px;
+	height: 150px;
+	margin:0 auto;
+}
+.pay_bank_mid li{
+	float: left;
+	width: 188px;
+	height: 38px;
+	border:1px solid #bfc4c8;
+	margin-right: 60px;
+	margin-bottom: 35px;
+}
+.pay_bank_mid li:nth-child(5n){
+	margin-right: 0;
+}
+.pay_bank_mid_foot{
+	width: 1200px;
+	height: 65px
+}
+#quick_pay{
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #ff4466;
+	text-align: center;
+	line-height: 28px;
+	width: 115px;
+	height: 28px;
+	border:2px dashed #ff4466;
+}
+.pay_bank_total{
+	float: right;
+	width: 190px;
+	height: 65px;
+}
+.pay_bank_total span{
+	display: block;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+.pay_bank_total span em{
+	font-style: normal;
+	color: #ff4466;
+	font-size: 18px
+}
+.pay_bank_total a{
+	color: #ff4466;
+}
+.pay_bank_foot{
+	margin-left: 6px;
+	width: 630px;
+	height: 234px;
+}
+.pay_bank_foot p{
+	width: 212px;
+	height: 18px;
+	margin:0 0 19px 145px;
+	padding-left: 28px;
+	background: url(../images/pay_38.jpg) no-repeat ;
+}
+.pay_bank_foot ul li{
+	margin-bottom: 22px;
+}
+.pay_bank_foot ul li label{
+	display: block;
+	float: left;
+	width: 70px;
+	margin-right: 18px
+}
+.pay_bank_foot ul li input{
+	width: 283px;
+	height: 20px;
+	border:1px solid #b2b2b2;
+	padding-left: 3px
+}
+.pay_bank_foot ul li.captcha input{
+	width: 188px;
+}
+.pay_bank_foot ul li.captcha label{
+	text-align: right;
+}
+.pay_bank_foot ul li a{
+	font-size: 12px;
+	text-decoration: underline;
+	color: #ff4466;
+	padding-left: 20px;
+}
+.pay_bank_foot ul li span{
+	font-size: 12px;
+	color: #b2b2b2;
+	padding-left: 18px;
+}
+.pay_bank_foot ul li button{
+	width: 100px;
+	height: 30px;
+	border:none;
+	background-color: #ff4466;
+	color: #ffffff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	margin-left: 145px;
+	cursor: pointer;
+}
+.pay_bank_foot ul li:last-child a{
+	padding-left: 80px
+}
+
+
+

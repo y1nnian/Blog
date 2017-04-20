@@ -1,0 +1,166 @@
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;color:#4c4c4c}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+
+
+
+
+/*middle开始*/
+.content{
+	width:1200px;
+	margin:30px auto 0 auto
+}
+.status_bar{
+	width:1200px;
+	height:121px
+}
+.step_bar_flow{
+	width:620px;
+	height:55px;
+	margin:0 auto
+}
+.step_bar_flow li{
+	float:left;
+	width:90px;
+	height:55px;
+	text-align:center;
+	line-height:55px;
+	margin-left:35px
+}
+.step_bar_flow li:first-child{
+	margin-left:15px
+}
+.step_bar_ico{
+	width:533px;
+	height:40px;
+	background:url(../images/evaluate_03.jpg) no-repeat;
+	margin:0 auto
+}
+.step_bar_ico li{
+	float:left;
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	font-size:24px;
+	color:#fff;
+	margin-left:83px
+}
+.step_bar_ico li:first-child{
+	margin-left:0
+}
+/*评价打分*/
+.evaluate{
+	width:803px;
+	height: 267px;
+	margin:0 auto;
+	padding: 35px 10px 0 0
+}
+.evaluate h1{
+	font-size: 24px;
+	color: #000000
+}
+.evaluate p{
+	height: 22px;
+	line-height: 22px
+}
+.evaluate_left{
+	width: 506px;
+	float: left;
+}
+.evaluate_left img{
+	margin: 36px 16px 0 49px;
+	float: left;	
+}
+.evaluate_left p{
+	float:left;
+	
+	margin-top:53px;
+	color: #000000
+}
+.evaluate_list{
+	color: #ff4466
+}
+.evaluate_stars{
+	font-size: 22px;
+	color: #ff8400;
+	cursor: pointer;
+}
+.evaluate_right p{
+	float:right;
+	margin-top: 35px
+}
+.evaluate_text{
+	width: 801px;
+	margin: 0 auto
+}
+.evaluate_text textarea{
+	width: 798px;
+	height: 164px;
+	border: 1px solid #b2b2b2;
+	resize:none;
+	padding: 0 0 0 3px;
+	overflow:auto;
+}
+.evaluate_text button{
+	width: 100px;
+	height: 30px;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 30px;
+	background-color: #ff4466;
+	border: none;
+	float: right;
+	padding: 0;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

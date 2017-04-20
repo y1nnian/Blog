@@ -1,0 +1,176 @@
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+/*header*/
+.header{
+	width:1200px;
+	height:184px;
+	line-height:184px;
+	margin:0 auto
+}
+.header a img{
+	margin-top:51px;
+	float:left
+}
+.header p{
+	float:left;
+	font-size:30px;
+	color:#ff4466;
+	margin-left:54px;
+}
+.header span{
+	display:block;
+	float:right;
+	width:160px;
+	height:35px;
+	margin-top:75px;
+	color:#4c4c4c;
+	font-size:18px
+}
+.header span a{
+	color:#000
+}
+.register_step{
+	margin:50px auto 0 auto;
+	width:1200px
+}
+.register_step form{
+	width:698px;
+	margin:0 auto;
+	overflow:hidden
+}
+.register_step form label{
+	width:177px;
+	height:40px;
+	border:1px solid #b2b2b2;
+	border-right:none;
+	display:block;
+	float:left;
+	font-size:18px;
+	color:#b2b2b2;
+	padding-left:15px;
+	line-height:40px
+}
+.register_step form input{
+	float:left;
+	width:500px;
+	height:38px;
+	border:1px solid #b2b2b2;
+	border-left:none;
+	margin-bottom:28px;
+	line-height: 38px;
+	color: #999999;	
+}
+.captcha{
+	position:relative
+}
+.captcha_pic{
+	position:absolute;
+	top:0px;
+	left:630px
+}
+.mail{
+	display:block;
+	width:54px;
+	height:30px;
+	position:absolute;
+	top:40px;
+	left:640px;
+	color:#ff4466;
+	font-size:12px;
+	line-height:30px
+}
+.phone_captcha{
+	position:relative
+}
+.get_captcha{
+	width:167px;
+	height:33px;
+	text-align:center;
+	background-color:#c7c7c7;
+	position:absolute;
+	top:3px;
+	left:510px
+}
+.get_captcha a{
+	display:block;
+	width:167px;
+	height:33px;
+	font-size:18px;
+	line-height:33px
+}
+.agree{
+	width:300px;
+	height:20px;
+	font-size:12px;
+	margin:55px auto 40px auto
+}
+.radio{
+	display: none;
+}
+.agree_btn{
+	float:left;
+	margin-right:22px
+}
+.agree p{
+	float:left
+}
+.agree p a{
+	color:#ff4466
+}
+.register_now{
+	width:697px;
+	height:55px;
+	text-align:center;
+	line-height:55px;
+	font-size:24px;
+	background-color:#da0707;
+	margin:0 auto
+}
+.register_now a{
+	color:#fff;
+	display:block;
+	width:697px;
+	height:55px
+}
+
+
+
+
+
+
+
+
+
+

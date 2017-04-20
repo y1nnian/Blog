@@ -1,0 +1,206 @@
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+
+/*middle开始*/
+.content{
+	width:1200px;
+	margin:50px auto 0 auto
+}
+/*侧导航*/
+.sidebar{
+	width:226px;
+	height:470px;
+	float:left
+}
+.sidebar p{
+	width:226px;
+	height:58px;
+	margin-bottom:25px;
+	color:#fff;
+	font-size:30px;
+	line-height:58px;
+	text-align:center;
+	background-color:#ff4466
+}
+.sidebar ul{
+	width:200px;
+	height:387px;
+	margin:0 auto
+}
+.sidebar ul li{
+	width:200px;
+	height:30px;
+	margin-bottom:13px;
+	font-size:16px;
+	line-height:30px;
+	text-align:center;
+	background-color:#ff4466
+}
+.sidebar ul li a{
+	display:block;
+	width:200px;
+	height:30px;
+	color:#fff
+}
+.sidebar ul li a.current{
+	background:url(../images/user_777.jpg) no-repeat 140px 12px
+}
+/*个人资料*/
+.mydata{
+	width:948px;
+	float:left;
+	margin-left:26px
+}
+.mydata h1{
+	/* width:945px; */
+	font-weight:normal;
+	/* border-bottom:1px solid #b2b2b2 */
+}
+.mydata hr{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.mydata h2{
+	font-weight:normal;
+	font-size:14px;
+	margin:34px 0 0 50px
+}
+.mydata div.avatar{
+	margin:56px 0 0 286px
+}
+.mydata div.avatar input{
+	display: none;
+}
+.mydata div.avatar label{
+	margin-left:68px;
+	color:#d73645;
+	cursor: pointer;
+}
+.mydata form{
+	margin:30px 0 0 75px
+}
+ .mydata form input{
+	border:1px solid #ccc;
+	padding-left: 3px;
+	width:275px;	
+	height:16px
+} 
+.mydata form label{
+	display:block;
+	float:left;
+	width:100px
+}
+.mydata form > ul{
+	width: 380px;
+}
+.mydata form > ul > li{
+	width: 380px;
+	margin-bottom:15px;
+	float: left;
+}
+.mydata form ul li.sex input{
+	border:none;
+	width: 12px;
+	height: 12px;
+	float: left;
+}
+.mydata form ul li.sex input+label{
+	width: 15px;
+
+}
+/*下拉菜单*/
+.dropdown_menu{
+	width: 945px;
+	height: 22px;
+}
+.main_menu{
+	float: left;
+	margin-right: 12px;
+	position: relative;
+}
+.main_menu > a{
+	display: block;
+	float: left;
+	width: 62px;
+	height: 20px;
+	padding-left:8px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #000000;
+	border:1px solid #cccccc;
+	background:url(../images/address_03.jpg) no-repeat 60px 7px
+}
+/*子菜单*/
+.main_menu ul{
+	width: 70px;
+	background-color: #ffffff;
+	border:1px solid #cccccc;
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+.mydata form ul li.main_menu ul li{
+	margin: 0
+}
+.main_menu ul a{
+	font-size: 12px;
+	text-align: center;
+	padding-left: 8px;
+	color: #000000;
+}
+
+.mydata form input#reset{
+	width:81px;
+	height:31px;
+	margin:32px 54px 0 122px;
+	background-color:#fa6e7b;
+	color:#fff;
+	cursor:pointer
+}
+.mydata form input#submit{
+	width:63px;
+	height:31px;
+	background-color:#d73645;
+	color:#fff;
+	cursor:pointer
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

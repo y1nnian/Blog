@@ -1,0 +1,365 @@
+
+/*全局样式*/
+body{padding:0; margin:0; font-size:14px;font-family: 微软雅黑}
+div,img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p{padding:0; margin:0;color:#4c4c4c}
+
+ul{list-style:none;}
+a{text-decoration:none;color:#4c4c4c}
+/*清除浮动*/
+.clearfloat{border:0px;clear:both; height:0px; font-size:1px; line-height:0px;}
+
+/*图片自适应*/
+img{border:0;/* max-width:100%;height:auto;display:block; */} 
+
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/*input框number属性去掉上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+
+*:focus{outline:none}
+::-moz-placeholder { color: #999; }/*Firefox 19+*/
+:-moz-placeholder { color: #999; }/*Firefox 18-*/
+:-ms-input-placeholder {color:#999};  /* Internet Explorer 10+ */  
+::-webkit-input-placeholder { color:#999; }
+:-ms-input-placeholder { color:#999; }
+
+
+
+
+
+
+/*middle开始*/
+.content{
+	width:1200px;
+	margin:30px auto 0 auto
+}
+.status_bar{
+	width:1200px;
+	height:121px
+}
+.step_bar_flow{
+	width:620px;
+	height:55px;
+	margin:0 auto
+}
+.step_bar_flow li{
+	float:left;
+	width:90px;
+	height:55px;
+	text-align:center;
+	line-height:55px;
+	margin-left:35px
+}
+.step_bar_flow li:first-child{
+	margin-left:15px
+}
+.step_bar_ico{
+	width:533px;
+	height:40px;
+	background:url(../images/confirm_order_03.jpg) no-repeat;
+	margin:0 auto
+}
+.step_bar_ico li{
+	float:left;
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	font-size:24px;
+	color:#fff;
+	margin-left:83px
+}
+.step_bar_ico li:first-child{
+	margin-left:0
+}
+.address_select{
+	width:1200px;
+	height:250px
+}
+.address_list div{
+	width:253px;
+	height:113px;
+	color:#4c4c4c;
+	border:1px solid #b2b2b2;
+	margin:20px 0 30px 49px;
+	background:url(../images/confirm_order_09.jpg) no-repeat 222px 82px;
+	float:left;
+	cursor:pointer
+}
+.address_list div:first-child{
+	margin-left:30px;
+}
+.address_list div.current_address{	
+	background:url(../images/confirm_order_07.jpg) no-repeat 222px 82px
+}
+.address_select div p{
+	width:226px;
+	padding:0 14px
+}
+.address_top{
+	height:36px;
+	line-height:36px;
+	border-bottom:1px solid #cecece
+}
+.address_top span{
+	padding-right:40px
+}
+.address_botm{
+	margin-top:15px;
+	color:#d1d1d1
+}
+.address_botm a{
+	color:#da0707;
+	padding-right:15px
+}
+.address_btn{
+	float:left;
+	display:block;
+	width:126px;
+	height:38px;
+	text-align:center;
+	line-height:38px;
+	font-weight:bold;
+	border:1px solid #b2b2b2
+}
+.address_manage{
+	color:#da0707;
+	float:right
+}
+/*订单*/
+.confirm_cart{
+	width: 1200px
+}
+.confirm_cart table{
+	width: 1200px;
+	table-layout: fixed
+}
+.confirm_cart table tr:first-child{
+	height: 53px;
+	font-size: 16px
+}
+.confirm_cart table tr:nth-child(2){
+	margin-top: 30px
+}
+.confirm_cart table tr:last-child{
+	margin-bottom: 0px
+}
+.confirm_cart table tr th{
+	border-bottom: 1px solid #ff4466;
+}
+.confirm_cart table tr th:first-child{
+	text-align: left;
+	padding-left: 31px
+}
+.confirm_cart table tr th:last-child{
+	text-align: right;
+	padding-right: 31px
+}
+.confirm_cart table tr th:nth-child(4){
+	padding-left: 40px
+}
+.confirm_cart table tr th:nth-child(5){
+	padding-left: 64px
+}
+.confirm_order_list{
+	float:left;
+	width:1170px;
+	height:212px;
+	margin-left:30px;
+	margin-bottom: 50px;
+	border-top:1px solid #cecece;
+	border-bottom: 1px solid #cecece
+}
+.confirm_order_list td{
+	vertical-align: top;
+	height: 169px;
+	padding-top: 43px
+}
+/*商品名称*/
+.confirm_order_list td.order_name{
+	width:100px;
+	height: 194px;
+	padding-top: 18px
+}
+.confirm_order_list td.order_name p{
+	margin-top: 20px;
+	text-align: center;
+}
+/*商品信息*/
+.order_attr{
+	width: 293px;
+	height: 169px;
+	padding: 43px 7px 0 16px
+}
+.order_attr p.name{
+	float:left
+}
+.order_attr input{
+	width: 295px;
+	height: 28px;
+	font-size: 12px;
+	padding-left: 6px;
+	margin-top: 13px;
+	line-height: 28px;
+	color: #999999;
+	border: 1px solid #b2b2b2
+}
+.order_attr p.color_size{
+	float:left;
+	margin-left: 18px;
+	width: 115px;
+	height: 54px;
+	color: #b2b2b2
+}
+.order_attr p.service{
+	width: 293px;
+	height: 16px;
+	float:left
+}
+.order_attr p.service img{
+	margin-right: 10px;
+}
+/*单价*/
+.order_unitPrice{
+	width: 213px;
+	padding-left: 17px
+}
+.order_unitPrice p{
+	font-size: 12px;
+}
+.order_unitPrice p:first-child{
+	margin-bottom: 59px
+}
+.order_unitPrice p:nth-child(2) span.express{
+	margin: 0 25px 0 18px
+}
+.order_unitPrice p:last-child{
+	margin-top: 10px
+}
+.order_unitPrice p:last-child span{
+	float:left
+}
+.order_unitPrice p em{
+	font-style: normal;
+}
+.order_unitPrice a{
+	display: block;
+	float:left;
+	width: 60px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	background-color: #ff4466;
+	margin: 0 29px 0 10px
+}
+/*数量*/
+.order_amount{
+	width: 155px;
+	padding-left: 35px;	
+}
+/*优惠*/
+.order_sale{
+	width: 139px;
+	text-align: center
+}
+.order_sale p em{
+	font-style: normal;
+	color: #ff4466
+}
+/*小计*/
+.order_totalPrice{
+	width: 80px;
+	padding-left: 116px;
+	text-align: center;
+}
+.order_totalPrice p:first-child{
+	color: #ff4466;
+	margin-bottom: 59px
+}
+.order_totalPrice p:nth-child(2){
+	color: #ff4466
+}
+/*提交订单*/
+.refer_order{
+	width: 493px;
+	height: 263px;
+	float:right;
+}
+.pay_choose{
+	width: 300px;
+	height: 104px;
+	float:right;
+}
+.refer_order p{
+	height: 18px;
+	line-height: 18px;
+	margin-top: 25px;
+	margin-left: 43px;
+	float:right;
+}
+.refer_order p input{
+	display: none;
+}
+.refer_order p span{
+	display: block;
+	float:right;
+	margin-left: 15px
+}
+.refer_order p img{
+	cursor: pointer;
+}
+.address_choose{
+	width: 474px;
+	height: 105px;
+	padding: 13px 6px 0 10px;
+	border: 1px solid #ff4466;
+	float:left
+}
+.address_choose p:first-child{
+	margin-top: 0
+}
+.address_choose p:first-child span{
+	color: #ff4466;
+	font-size: 20px
+}
+.address_choose p:nth-child(2){
+	float:left;
+	margin-left: 0px;
+	margin-top: 35px;
+}
+.address_choose p:last-child{
+	margin-top: 11px
+}
+/*提交按钮*/
+.refer_button{
+	width: 492px;
+	height: 40px;
+	float:left
+}
+.refer_button a.left_btn{
+	float:left;
+	margin: 13px 0 0 206px;
+	color: #ff4466
+}
+.refer_button a.right_btn{
+	float:right;
+	display: block;
+	width: 141px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	font-size: 22px;
+	background-color: #ff4466
+}
